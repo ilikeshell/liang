@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SierpinskiTriangle.jnlp">
+  <information>
+    <title>SierpinskiTriangle</title>
+    <vendor>kaiyan</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SierpinskiTriangle.jar" size="3812" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="SierpinskiTriangle" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="sierpinskitriangle.SierpinskiTriangle"  name="SierpinskiTriangle" />
+  <update check="always"/>
+</jnlp>
