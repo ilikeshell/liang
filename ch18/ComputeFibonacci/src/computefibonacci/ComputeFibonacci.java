@@ -6,9 +6,9 @@
 package computefibonacci;
 
 import java.util.Scanner;
-import jdk.nashorn.internal.parser.TokenType;
 
 public class ComputeFibonacci {
+    private static int count = 0;
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -17,9 +17,11 @@ public class ComputeFibonacci {
         
         System.out.println("The fibonacci number an index " + index + " is "
             + fib(index));
+        System.out.println("The fibonacci fun is invoked " + count + " times");
     }
     
     public static long fib(long index){
+        count++;
         if(index == 0)
             return 0;
         else if(index == 1)
